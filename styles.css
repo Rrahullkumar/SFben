@@ -158,13 +158,11 @@
       padding: 0 1rem;
     }
   }
-/* Existing header styles remain the same */
+
 .header-container {
     width: 100%;
     background: white;
   }
-  
-  /* Previous header styles... */
   
   /* Main Content Styles */
   .main-content {
@@ -302,7 +300,6 @@
     }
   }
 
-/* Previous styles remain the same */
 
 /* Footer Styles */
 .site-footer {
@@ -416,8 +413,6 @@
       align-items: center;
     }
   }
-
-  /* Previous styles remain... */
 
 /* Registration Form Styles */
 .registration-container {
