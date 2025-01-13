@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SF BEN - Salesforce News and Articles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header from original code remains the same -->
+  <div class="header-container">
+    <div class="top-header">
+      <div class="header-content">
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle menu">
+          ☰
+        </button>
+        <div class="logo">
+          <a href="/">SF BEN</a>
+        </div>
+        <nav class="desktop-nav">
+          <a href="/events">Events</a>
+          <a href="/career">Career</a>
+          <a href="/app-assessor">AppAssessor</a>
+          <a href="/salesforce-news">Salesforce News</a>
+          <a href="/articles-by-role">Articles by Role</a>
+        </nav>
+        <button class="search-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="/events">Events</a>
+        <a href="/career">Career</a>
+        <a href="/app-assessor">AppAssessor</a>
+        <a href="/salesforce-news">Salesforce News</a>
+        <a href="/articles-by-role">Articles by Role</a>
+        <a href="admin-login.php" class="admin-link">Admin Panel</a>
+      </div>
+    </div>
+    <div class="purple-line"></div>
+    <div class="sub-nav-container">
+      <div class="sub-nav">
+        <button class="active">Latest</button>
+        <button>Most Popular</button>
+        <button>Editors' Picks</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <div class="articles-grid">
+      <!-- Featured Article - CRM Data -->
+      <article class="article-card featured">
+        <div class="article-image">
+          <img src="crm-data-image.png" alt="Colorful abstract design representing CRM data">
+          <span class="category-tag">Architects</span>
+        </div>
+        <div class="article-content">
+          <h2>Best Practices for Using Historical CRM Data in Data Cloud and AI</h2>
+          <div class="article-meta">
+            <span class="author">By Mehmet Orun</span>
+            <span class="date">January 10, 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Featured Article - Salesforce SF -->
+      <article class="article-card featured">
+        <div class="article-image">
+          <img src="sf-bridge-image.png" alt="Golden Gate Bridge in purple sunset">
+          <span class="category-tag">News</span>
+        </div>
+        <div class="article-content">
+          <h2>Salesforce to Keep Dreamforce in San Francisco for the Next Three Years</h2>
+          <div class="article-meta">
+            <span class="author">By Thomas Morgan</span>
+            <span class="date">January 10, 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Promotional Sections -->
+      <aside class="promo-section">
+        <div class="event-promo">
+          <h3>VIRTUAL EVENT JAN 29TH 9AM PT</h3>
+          <h2>DEVOPS LIFECYCLE SUMMIT 2025</h2>
+          <p>What a complete DevOps view means for you</p>
+          <a href="register.php" class="register-button" >Register now</a>
+          <img src="gearset-logo.png" alt="Gearset Logo" class="promo-logo">
+        </div>
+
+        <div class="plauti-promo">
+          <img src="plauti-logo.png" alt="Plauti Logo" class="promo-logo">
+          <h2>Think your data is ready for AI?</h2>
+          <p>Learn the essential steps that will get you there.</p>
+          <a href="#" class="cta-button">READ OUR GUIDE</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- New Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Company Info Column -->
+      <div class="footer-column">
+        <div class="footer-logo">SF BEN</div>
+        <address>
+          <p>Salesforce Ben</p>
+          <p>Third Floor Library Building</p>
+          <p>Sun Street</p>
+          <p>Tewkesbury</p>
+          <p>Gloucestershire</p>
+          <p>United Kingdom</p>
+          <p>GL20 5NX</p>
+        </address>
+      </div>
+
+      <!-- Where to Start Column -->
+      <div class="footer-column">
+        <h3>Where to Start</h3>
+        <nav class="footer-nav">
+          <a href="/certification-list">Salesforce Certification List</a>
+          <a href="/get-certified">How to Get Certified</a>
+          <a href="/practice-exams">Free Salesforce Practice Exams</a>
+          <a href="/admin-exam">Admin Practice Exam</a>
+          <a href="/app-builder-exam">Platform App Builder Practice Exam</a>
+          <a href="/developer-exam">Platform Developer 1 Practice Exam</a>
+          <a href="/get-job">How to Get a Job in Salesforce</a>
+        </nav>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <nav class="footer-nav">
+          <a href="/events">Events</a>
+          <a href="/career">Career</a>
+          <a href="/app-assessor">AppAssessor</a>
+          <a href="/salesforce-news">Salesforce News</a>
+        </nav>
+      </div>
+
+      <!-- Roles Column -->
+      <div class="footer-column">
+        <h3>Roles</h3>
+        <nav class="footer-nav">
+          <a href="/admins">Admins</a>
+          <a href="/devops">DevOps</a>
+          <a href="/developers">Developers</a>
+          <a href="/marketers">Marketers</a>
+          <a href="/consultants">Consultants</a>
+          <a href="/architects">Architects</a>
+          <a href="/business-analysts">Business Analysts</a>
+        </nav>
+      </div>
+
+      <!-- Company Column -->
+      <div class="footer-column">
+        <h3>Company</h3>
+        <nav class="footer-nav">
+          <a href="/about">About Us</a>
+          <a href="/contact">Contact Us</a>
+          <a href="/write">Write For Us</a>
+          <a href="/influencer">Influencer Program</a>
+          <a href="/advertise">Advertise With Us</a>
+          <a href="/pledge">Pledge 1%</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/login">Log in to Courses</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2014-2025 SalesforceBen.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
